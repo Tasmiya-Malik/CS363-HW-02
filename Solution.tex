@@ -1,0 +1,40 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath, amsfonts}
+\usepackage{hyperref}
+
+\printanswers
+
+\title{CS363 Networks \& Collective Behavior - Homework 2}
+\author{Tasmiya Malik tm06183, Ifrah Ilyas}
+
+\begin{document}
+\maketitle
+\begin{questions}
+        
+    \question There is a question here.
+    \begin{solution}
+        From the question we have,
+        $$n=1\times 10^9 \hspace{5cm} p=1\times 10^{-5}$$
+        \begin{parts}
+            \part $$<m> = n\textbf{C}2\cdot p$$
+            $$<m> = 1\times 10^9\textbf{C}2\cdot 1\times 10^{-5}$$
+            $$<m> = 4.99\times 10^{12}$$
+
+            \part $$<k> = (n-1)\cdot p$$
+            $$<k>=(1\times 10^9 - 1)\cdot 1\times 10^{-5}$$
+            $$<k> = 9999.99$$
+
+            \part $$<k> = (n-1)\cdot p$$
+            $$1\times 10^5 = (1\times 10^9 - 1)\cdot p$$
+            $$p = \frac{1\times 10^5}{1\times 10^9 - 1} = 1\times 10^{-4}$$
+
+            \part $$APL = \frac{\ln (n)}{\ln (<k>)}$$
+            $$\frac{\ln (1\times 10^9)}{\ln (9999.99)} = 2.25$$
+
+            \part No, all the nodes will not be a part of the giant component. This is because the probability $p$ is near to $0$ rather than $1$, thus, not all nodes will be connected.
+        \end{parts}
+    \end{solution}
+\end{questions}
+\end{document}
+
